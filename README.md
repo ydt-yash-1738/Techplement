@@ -1,4 +1,4 @@
-# Quote of the Day Web App ( https://techplement-ydt.vercel.app/ )
+# [Quote of the Day Web App](https://techplement-ydt.vercel.app/)
 
 A web application that provides a daily dose of inspiration with a new quote every day. Users can also generate random quotes or search for quotes based on specific tags or keywords.
 
