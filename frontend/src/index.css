@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+  .quote-container {
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+    transition: box-shadow 0.3s ease-out;
+  }
+
+  .quote-container:hover {
+    transition: box-shadow 0.3s ease-in-out;
+    box-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
+  }
+  
+  .quote-content {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .quote-slide-enter {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  
+  .quote-slide-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  
