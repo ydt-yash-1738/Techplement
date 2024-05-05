@@ -53,6 +53,10 @@ app.get('/quote-by-tag', async (req, res) => {
   }
 });
 
+app.get('/',(req, res) => {
+  res.send('Hello World!');
+})
+
 app.listen(port, () => {
   console.log(`CORS proxy server is running on http://localhost:${port}`);
 });
