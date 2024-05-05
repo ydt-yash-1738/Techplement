@@ -23,7 +23,7 @@ function QuoteOfTheDay() {
 
   const fetchQuote = async () => {
     try {
-      const apiUrl = 'http://localhost:3001/quote-of-the-day';
+      const apiUrl = 'https://techplement1.vercel.app/quote-of-the-day';
       const response = await fetch(apiUrl);
       const data = await response.json();
       
@@ -51,7 +51,7 @@ function QuoteOfTheDay() {
 
   const fetchQuoteRandom = async () => {
     try {
-      const apiUrl = 'http://localhost:3001/quote-of-the-day-random';
+      const apiUrl = 'https://techplement1.vercel.app/quote-of-the-day-random';
       const response = await fetch(apiUrl);
       const data = await response.json();
       
@@ -71,7 +71,7 @@ function QuoteOfTheDay() {
 
   const searchByTag = async () => {
     try {
-        const url = `http://localhost:3001/quote-by-tag?tag=${searchTag}`;
+        const url = `https://techplement1.vercel.app/quote-by-tag?tag=${searchTag}`;
         const response = await fetch(url);
         const data = await response.json();
         
