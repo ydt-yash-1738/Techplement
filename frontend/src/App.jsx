@@ -34,14 +34,14 @@ function QuoteOfTheDay() {
         setHeadingText('Quote of the Day');
       } else {
         console.error('Error: Unable to fetch quote.');
-        // Clear the quote and author if there's an error
+       
         setQuote('');
         setAuthor('');
         setHeadingText('Error fetching quote');
       }
     } catch (error) {
       console.error('Error fetching data:', error);
-      // Clear the quote and author if there's an error
+      
       setQuote('');
       setAuthor('');
       setHeadingText('Error fetching quote');
@@ -59,8 +59,8 @@ function QuoteOfTheDay() {
         const { q, a } = data[0];
         setQuoterandom(q);
         setAuthorrandom(a);
-        setRandomQuoteFetched(true); // Update state to indicate random quote has been fetched
-        setHeadingText('Random Quote'); // Change heading text when random quote is fetched
+        setRandomQuoteFetched(true); 
+        setHeadingText('Random Quote'); 
       } else {
         console.error('Error: Unable to fetch quote.');
       }
@@ -75,7 +75,7 @@ function QuoteOfTheDay() {
         const response = await fetch(url);
         const data = await response.json();
         
-        // Check if data.results exists before accessing its length property
+        
         const resultsLength = data.results ? data.results.length : 0;
         
         console.log("Results length:", resultsLength);
