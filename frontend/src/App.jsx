@@ -137,9 +137,9 @@ function QuoteOfTheDay() {
           value={searchTag}
           onChange={(e) => setSearchTag(e.target.value)}
           placeholder="Search quote by tag (eg: life, happy...)"
-          className="w-full p-2 md:w-auto m-2"
+          className="w-full p-2 md:w-auto ml-2 rounded-sm"
         />
-        <button onClick={handleSearchByTag} className="bg-blue-500 hover:bg-gray-700 text-white font-bold py-2 px-4 ml-2 md:ml-0 md:mt-0 md:w-auto m-2">
+        <button onClick={handleSearchByTag} className="bg-blue-500 hover:bg-gray-700 text-white font-bold py-2 px-4 ml-2 md:ml-0 md:mt-0 md:w-auto rounded-sm">
           Search
         </button>
       </div>
