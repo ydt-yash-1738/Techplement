@@ -152,7 +152,7 @@ function QuoteOfTheDay() {
 
   return (
     <div>
-      <TopLoadingBar color="#3B82F6" ref={refTopLoadingBar} className='h-10'/> 
+      <TopLoadingBar color="#3B82F6" ref={refTopLoadingBar} className='h-30'/> 
       <div className="relative flex flex-col h-screen bg-cover bg-no-repeat bg-left-center md:bg-center-left" style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover', backgroundPosition: 'center top' }}>
         <div className="flex items-center justify-center mt-5">
           <input
