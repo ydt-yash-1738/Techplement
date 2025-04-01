@@ -4,7 +4,11 @@ const cors = require('cors');
 const app = express();
 const port = 3001;
 
-app.use(cors());
+app.use(cors({
+  origin: 'https://techplement-ydt.vercel.app/',  // Allow all origins (for testing)
+  methods: ['GET'],  // Only allow GET requests
+  allowedHeaders: ['Content-Type']
+}));
 
 app.get('/quote-of-the-day', async (req, res) => {
   try {
