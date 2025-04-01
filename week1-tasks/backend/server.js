@@ -5,7 +5,7 @@ const app = express();
 const port = 3001;
 
 app.use(cors({
-  origin: 'https://techplement-ydt.vercel.app/', 
+  origin: 'https://techplement-ydt.vercel.app', 
   methods: ['GET'],  // Only allow GET requests
   allowedHeaders: ['Content-Type']
 }));
